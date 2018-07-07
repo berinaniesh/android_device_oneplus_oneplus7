@@ -116,6 +116,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.dpm.feature=11
 
+# Alert Slider
+PRODUCT_PACKAGES += \
+    tri-state-key_daemon
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
