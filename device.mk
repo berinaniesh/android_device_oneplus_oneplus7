@@ -76,6 +76,7 @@ PRODUCT_BOOT_JARS += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPAOnePlus7TFrameworks \
     OnePlus7TFrameworks \
     OnePlus7TSystemUI
 
@@ -118,6 +119,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 
 # Alert Slider
 PRODUCT_PACKAGES += \
+    TriStateHandler \
     tri-state-key_daemon
 
 # Update Engine
