@@ -64,6 +64,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus7t
 
+# OnePlus
+PRODUCT_PACKAGES += \
+    oneplus-fwk.oneplus7t
+
+PRODUCT_BOOT_JARS += \
+    oneplus-fwk.oneplus7t
+
 # Overlays
 PRODUCT_PACKAGES += \
     OnePlus7TFrameworks
