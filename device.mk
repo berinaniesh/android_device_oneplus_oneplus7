@@ -78,3 +78,7 @@ PRODUCT_PACKAGES += \
 
 # Vendor
 $(call inherit-product, vendor/oneplus/oneplus7t/oneplus7t-vendor.mk)
+
+# WiFi
+PRODUCT_PACKAGES += \
+    WifiResCommon
