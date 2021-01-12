@@ -1,0 +1,5 @@
+# Hotword enrollment
+-product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
+-product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
