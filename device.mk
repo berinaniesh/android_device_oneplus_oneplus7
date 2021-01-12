@@ -57,6 +57,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus7t
 
+# Overlays
+PRODUCT_PACKAGES += \
+    OnePlus7TFrameworks
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
