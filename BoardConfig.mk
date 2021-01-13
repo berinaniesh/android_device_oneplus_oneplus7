@@ -14,6 +14,8 @@
 
 DEVICE_PATH := device/oneplus/oneplus7t
 
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
