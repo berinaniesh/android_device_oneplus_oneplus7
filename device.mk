@@ -29,19 +29,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti.recovery
 
+# Factory Reset Protection
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.frp.pst=/dev/block/bootdevice/by-name/config
+
+PRODUCT_PACKAGES += \
+    ueventd.oneplus.rc
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fstab
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
-
-# Init
-PRODUCT_PACKAGES += \
-    ueventd.qcom.rc
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Kernel
 KERNEL_SD_LLVM_SUPPORT := true
@@ -82,7 +86,3 @@ PRODUCT_PACKAGES += \
 
 # Vendor
 $(call inherit-product, vendor/oneplus/oneplus7t/oneplus7t-vendor.mk)
-
-# WiFi
-PRODUCT_PACKAGES += \
-    WifiResCommon
