@@ -59,6 +59,10 @@ PRODUCT_COPY_FILES += \
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
+# Init
+PRODUCT_PACKAGES += \
+    init.oneplus.haptics.rc
+
 # Kernel
 KERNEL_SD_LLVM_SUPPORT := true
 TARGET_KERNEL_VERSION := 4.14
