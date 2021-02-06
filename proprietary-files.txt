@@ -46,9 +46,11 @@ system_ext/etc/permissions/qti_permissions.xml
 system_ext/etc/permissions/telephonyservice.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/framework/qcrilhook.jar
-system_ext/framework/qti-telephony-common.jar
--system_ext/priv-app/ims/ims.apk
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# Radio from LA.QSSI.11.0.r1-09400-qssi.0
+system_ext/framework/qti-telephony-common.jar|710406e01836b558c802ba4960fa59f31545389e
+-system_ext/priv-app/ims/ims.apk|cccc15a4fbaff0f412e09e63744fc95c3c339da8
 
 # Radio - IMS
 system_ext/lib64/lib-imsvideocodec.so
