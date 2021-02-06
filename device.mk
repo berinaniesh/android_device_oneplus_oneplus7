@@ -53,9 +53,12 @@ TARGET_KERNEL_VERSION := 4.14
 
 # NFC
 PRODUCT_PACKAGES += \
-    NfcNci \
-    Tag \
-    SecureElement
+    android.hardware.nfc@1.0:64 \
+    android.hardware.nfc@1.1:64 \
+    android.hardware.nfc@1.2:64 \
+    android.hardware.secure_element@1.0:64 \
+    com.android.nfc_extras \
+    Tag
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -73,7 +76,21 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 TARGET_BOARD_PLATFORM := msmnile
 
 # QTI
-TARGET_COMMON_QTI_COMPONENTS := all
+TARGET_COMMON_QTI_COMPONENTS := \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    media \
+    overlay \
+    perf \
+    telephony \
+    usb \
+    vibrator \
+    wfd \
+    wlan
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
