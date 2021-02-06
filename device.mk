@@ -94,7 +94,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     media \
     overlay \
     perf \
-    telephony \
     usb \
     vibrator \
     wfd \
@@ -102,6 +101,17 @@ TARGET_COMMON_QTI_COMPONENTS := \
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
+
+# Telephony
+PRODUCT_PACKAGES += \
+    CellBroadcastReceiver \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.deprecated@1.0 \
+    libjson
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.vendor.dpm.feature=11
 
 # Update Engine
 PRODUCT_PACKAGES += \
