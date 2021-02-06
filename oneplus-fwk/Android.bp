@@ -1,5 +1,5 @@
 java_library {
-    name: "oneplus-fwk.7t",
+    name: "oneplus-fwk.oneplus7t",
     installable: true,
 
     srcs: [
