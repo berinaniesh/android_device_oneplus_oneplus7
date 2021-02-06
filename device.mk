@@ -73,7 +73,8 @@ PRODUCT_BOOT_JARS += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    OnePlus7TFrameworks
+    OnePlus7TFrameworks \
+    OnePlus7TSystemUI
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
