@@ -45,9 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/pa/config/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_PACKAGES += \
-    aospa.biometrics.fingerprint.inscreen@1.0-service.oneplus7t \
-    vendor.oneplus.fingerprint.extension@1.0 \
-    vendor.oneplus.hardware.display@1.0
+    aospa.biometrics.fingerprint.inscreen@1.0-service.oneplus7t
 
 # Fstab
 PRODUCT_PACKAGES += \
@@ -74,8 +72,7 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/oneplus/oneplus7t \
-    device/oneplus/common
+    $(DEVICE_PATH)
 
 # OnePlus
 PRODUCT_PACKAGES += \
@@ -120,7 +117,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     android.hardware.radio@1.4 \
-    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.0 \
     android.hardware.radio.deprecated@1.0 \
     libjson
 
