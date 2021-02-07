@@ -41,6 +41,9 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fstab
+PRODUCT_PACKAGES += \
+    fstab.qcom
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
