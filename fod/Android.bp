@@ -17,8 +17,8 @@ cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
     name: "aospa.biometrics.fingerprint.inscreen@1.0-service.oneplus7t",
-    init_rc: ["aospa.biometrics.fingerprint.inscreen@1.0-service.oneplus7t"],
-    vintf_fragments: ["aospa.biometrics.fingerprint.inscreen@1.0-service.oneplus7t"],
+    init_rc: ["aospa.biometrics.fingerprint.inscreen@1.0-service.oneplus7t.rc"],
+    vintf_fragments: ["aospa.biometrics.fingerprint.inscreen@1.0-service.oneplus7t.xml"],
     srcs: ["service.cpp", "FingerprintInscreen.cpp"],
     shared_libs: [
         "libbase",
