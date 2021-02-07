@@ -127,10 +127,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.dpm.feature=11
 
-# Get non-open-source specific aspects.
-$(call inherit-product-if-exists, vendor/qcom/common/telephony/telephony-vendor.mk)
-$(call inherit-product-if-exists, vendor/qcom/common/telephony-diag/telephony-diag-vendor.mk)
-
 # Alert Slider
 PRODUCT_PACKAGES += \
     TriStateHandler \
