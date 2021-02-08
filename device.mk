@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/pa/config/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_PACKAGES += \
-    aospa.biometrics.fingerprint.inscreen@1.0-service.oneplus7t
+    vendor.aospa.biometrics.fingerprint.inscreen@1.0-service
 
 # Fstab
 PRODUCT_PACKAGES += \
