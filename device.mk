@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+    $(DEVICE_PATH) \
+    device/oneplus/common
 
 # OnePlus
 PRODUCT_PACKAGES += \
@@ -117,7 +118,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     android.hardware.radio@1.4 \
-    android.hardware.radio.config@1.0 \
+    android.hardware.radio.config@1.2 \
     android.hardware.radio.deprecated@1.0 \
     libjson
 
