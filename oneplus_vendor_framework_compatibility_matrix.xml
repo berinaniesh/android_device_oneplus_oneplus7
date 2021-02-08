@@ -52,7 +52,7 @@
         </interface>
     </hal>
     <!-- NFC -->
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>android.hardware.nfc</name>
         <version>1.0</version>
         <interface>
@@ -60,7 +60,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>vendor.nxp.eventprocessor</name>
         <version>1.0</version>
         <interface>
@@ -68,7 +68,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>vendor.nxp.hardware.nfc</name>
         <version>1.0-1</version>
         <version>2.0</version>
@@ -77,7 +77,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>vendor.nxp.nxpese</name>
         <version>1.0</version>
         <interface>
@@ -85,19 +85,11 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>vendor.nxp.nxpnfc</name>
         <version>1.0</version>
         <interface>
             <name>INxpNfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.nxp.nxpnfclegacy</name>
-        <version>1.0</version>
-        <interface>
-            <name>INxpNfcLegacy</name>
             <instance>default</instance>
         </interface>
     </hal>
