@@ -87,6 +87,7 @@ PRODUCT_BOOT_JARS += \
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAOnePlus7TFrameworks \
+    NoInjection \
     OnePlus7TFrameworks \
     OnePlus7TSystemUI
 
