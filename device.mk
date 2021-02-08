@@ -72,7 +72,7 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH) \
+    device/oneplus/oneplus7t \
     device/oneplus/common
 
 # OnePlus
