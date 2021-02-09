@@ -1,0 +1,14 @@
+on init
+    mount none /system_ext/overlay/EmptyOverlay.apk vendor/overlay/FrameworksResTarget.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk vendor/overlay/oneplus_aodnotification_gold/aodnotification_gold_systemui.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk vendor/overlay/oneplus_aodnotification_purple/aodnotification_purple_systemui.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk vendor/overlay/oneplus_aodnotification_red/aodnotification_red_systemui.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk vendor/overlay/oneplus_shape_circle/OnePlusIconShapeCircleOverlay.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk vendor/overlay/oneplus_shape_roundedrect/OnePlusIconShapeRoundedRectOverlay.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk vendor/overlay/oneplus_shape_square/OnePlusIconShapeSquareOverlay.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk vendor/overlay/oneplus_shape_squircle/OnePlusIconShapeSquircleOverlay.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk vendor/overlay/oneplus_shape_teardrop/OnePlusIconShapeTeardropOverlay.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk odm/overlay/OdmOverlay-framework-res.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk odm/overlay/OdmOverlay-oneplus-framework-res.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk odm/overlay/OdmOverlay-OPSettings.apk bind
+    mount none /system_ext/overlay/EmptyOverlay.apk odm/overlay/OdmOverlay-OPSystemUI.apk bind

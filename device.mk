@@ -61,7 +61,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Init
 PRODUCT_PACKAGES += \
-    init.oneplus.haptics.rc
+    init.oneplus.haptics.rc \
+    init.oneplus.overlay.rc
 
 # Kernel
 KERNEL_SD_LLVM_SUPPORT := true
@@ -95,6 +96,7 @@ PRODUCT_PACKAGES += \
     AOSPAOnePlus7TFrameworks \
     AOSPAOnePlus7TSettings \
     AOSPAOnePlus7TSystemUI \
+    EmptyOverlay \
     NoInjection \
     OnePlus7TFrameworks \
     OnePlus7TSystemUI
