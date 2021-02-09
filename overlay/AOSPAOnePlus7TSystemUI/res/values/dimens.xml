@@ -23,4 +23,10 @@
     <dimen name="tri_state_up_dialog_position_deep">21.0px</dimen>
     <dimen name="tri_state_up_dialog_position_deep_land">21.0px</dimen>
 
+    <!-- Battery percentage position in AOD -->
+    <dimen name="keyguard_indication_margin_bottom">20dp</dimen>
+
+    <!-- The bottom margin of the keyguard security container -->
+    <dimen name="kg_security_container_min_bottom_margin">452px</dimen>
+
 </resources>
