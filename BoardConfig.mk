@@ -77,7 +77,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/oneplus_vendor_framework_compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit_oneplus7t
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oneplus7t
 TARGET_RECOVERY_DEVICE_MODULES := libinit_oneplus7t
 
 # Kernel
