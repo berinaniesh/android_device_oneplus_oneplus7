@@ -22,6 +22,7 @@ product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 -system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk
 -system_ext/app/DynamicDDSService/DynamicDDSService.apk
 -system_ext/app/SimSettings/SimSettings.apk
+-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 -system_ext/app/datastatusnotification/datastatusnotification.apk
 -system_ext/app/embms/embms.apk
 -system_ext/app/imssettings/imssettings.apk
@@ -208,4 +209,3 @@ system_ext/lib64/vendor.qti.latency@2.0.so
 # Telephony - from LA.QSSI.11.0.r1-09400-qssi.0
 system_ext/framework/qti-telephony-common.jar|e6f7c4df7b925073525d9b678f27087e1f45017f
 -system_ext/priv-app/ims/ims.apk|cccc15a4fbaff0f412e09e63744fc95c3c339da8
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|a32f88ddcc8f9cba18aa5697ee5bd52201e89b13
