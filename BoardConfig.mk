@@ -75,7 +75,6 @@ TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/oneplus_vendor_framework_compatibility_matrix.xml
-    $(DEVICE_PATH)/framework_manifest.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oneplus7t
