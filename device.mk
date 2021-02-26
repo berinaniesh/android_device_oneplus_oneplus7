@@ -107,8 +107,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Performance
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/msm_irqbalance.conf \
-    $(DEVICE_PATH)/configs/perfconfigstore.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/perf/perfconfigstore.xml
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/msm_irqbalance.conf \
+    $(LOCAL_PATH)/configs/perfconfigstore.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/perf/perfconfigstore.xml
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
@@ -124,24 +124,13 @@ TARGET_COMMON_QTI_COMPONENTS := \
     media-legacy \
     overlay \
     perf \
+    telephony \
     usb \
     vibrator \
-    wfd \
     wlan
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
-
-# Telephony
-PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
-    android.hardware.radio@1.4 \
-    android.hardware.radio.config@1.2 \
-    android.hardware.radio.deprecated@1.0 \
-    libjson
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.vendor.dpm.feature=11
 
 # Alert Slider
 PRODUCT_PACKAGES += \
@@ -156,3 +145,22 @@ PRODUCT_PACKAGES += \
 
 # Vendor
 $(call inherit-product, vendor/oneplus/oneplus7t/oneplus7t-vendor.mk)
+
+-include vendor/oneplus/oneplus7t-vendor/BoardConfig.mk
+
+# WFD
+DEVICE_FRAMEWORK_MANIFEST_FILE += device/qcom/common/wfd/framework_manifest.xml
+
+PRODUCT_PACKAGES += \
+    libnl \
+    libwfdaac
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
+
+# Inherit QCOM display dependencies.
+$(call inherit-product-if-exists, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
