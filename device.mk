@@ -146,8 +146,6 @@ PRODUCT_PACKAGES += \
 # Vendor
 $(call inherit-product, vendor/oneplus/oneplus7t/oneplus7t-vendor.mk)
 
--include vendor/oneplus/oneplus7t-vendor/BoardConfig.mk
-
 # WFD
 DEVICE_FRAMEWORK_MANIFEST_FILE += device/qcom/common/wfd/framework_manifest.xml
 
