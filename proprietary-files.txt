@@ -125,6 +125,7 @@ vendor/lib64/camera/fdconfigpreviewlite.bin|57a107b602bfbe3a8b571fdcaa6eb8cb217b
 vendor/lib64/camera/fdconfigvideo.bin|57a107b602bfbe3a8b571fdcaa6eb8cb217b7144
 vendor/lib64/camera/fdconfigvideolite.bin|57a107b602bfbe3a8b571fdcaa6eb8cb217b7144
 vendor/lib64/hw/camera.qcom.so|2a14ce1858680fc0a1bb15f3d55d606a88bfcbc9
+vendor/lib64/hw/com.qti.chi.override.so
 
 # Fingerprint - from OOS
 vendor/lib/hw/goodix.fod.msmnile.so|19d1225651405885e693714c36baa45fc4e3b824
