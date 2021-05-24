@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# ParanoidDoze
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.proximity=true
+
 # Wifi Overlay
 PRODUCT_PACKAGES += \
     OnePlus7TWifiOverlay
