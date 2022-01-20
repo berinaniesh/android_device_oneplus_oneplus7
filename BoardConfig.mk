@@ -6,7 +6,7 @@
 -include device/oneplus/sm8150-common/BoardConfigCommon.mk
 
 BOARD_VENDOR := oneplus
-DEVICE_PATH := device/oneplus/oneplus7t
+DEVICE_PATH := device/oneplus/oneplus7
 
 # A/B
 AB_OTA_PARTITIONS += \
