@@ -7,7 +7,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, device/oneplus/sm8150-common/common.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/oneplus/oneplus7t/oneplus7t-vendor.mk)
+$(call inherit-product, vendor/oneplus/oneplus7/oneplus7-vendor.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \

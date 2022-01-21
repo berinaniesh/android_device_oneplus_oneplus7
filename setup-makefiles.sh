@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=oneplus7t
+export DEVICE=oneplus7
 export DEVICE_COMMON=sm8150-common
 export VENDOR=oneplus
 
